@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: MAY BE, MAY, LIC=LSNXV-PGWRN-56VQ2-9VH1S-LP21L-P1ZC4
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\stm32Project\project\Project.uvprojx
+Project File Date:  08/22/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+Hardware/WIFI.c(1): warning: In file included from...
+./Start\stm32f10x.h(478): warning: In file included from...
+./Start/core_cm3.h(1720): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+Hardware/WIFI.c(7): warning: no previous extern declaration for non-static variable 'USART1_RX_CNT' [-Wmissing-variable-declarations]
+uint8_t USART1_RX_CNT = 0;
+        ^
+Hardware/WIFI.c(7): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t USART1_RX_CNT = 0;
+^
+Hardware/WIFI.c(13): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        USART1_RX_BUF[USART1_RX_CNT] = USART_ReceiveData(USART1);
+                                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+Hardware/WIFI.c(9): warning: no previous prototype for function 'USART1_IRQHandler' [-Wmissing-prototypes]
+void USART1_IRQHandler(void)
+     ^
+Hardware/WIFI.c(9): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void USART1_IRQHandler(void)
+^
+static 
+Hardware/WIFI.c(22): warning: while loop has empty body [-Wempty-body]
+        while(USART_GetFlagStatus(USART1,USART_FLAG_TXE)==RESET);
+                                                                ^
+Hardware/WIFI.c(22): note: put the semicolon on a separate line to silence this warning
+Hardware/WIFI.c(20): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int ch,FILE *f)
+                       ^
+Hardware/WIFI.c(1): warning: In file included from...
+./Start\stm32f10x.h(8297): warning: In file included from...
+./User\stm32f10x_conf.h(48): warning: In file included from...
+./Library\stm32f10x_usart.h(50): warning: padding size of 'USART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+Hardware/WIFI.c(31): warning: no previous prototype for function 'WIFI_Init' [-Wmissing-prototypes]
+void WIFI_Init(void)
+     ^
+Hardware/WIFI.c(31): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void WIFI_Init(void)
+^
+static 
+Hardware/WIFI.c(68): warning: no previous prototype for function 'Print' [-Wmissing-prototypes]
+void Print(void)
+     ^
+Hardware/WIFI.c(68): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Print(void)
+^
+static 
+Hardware/WIFI.c(6): warning: no previous extern declaration for non-static variable 'USART1_RX_BUF' [-Wmissing-variable-declarations]
+uint8_t USART1_RX_BUF[200];
+        ^
+Hardware/WIFI.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t USART1_RX_BUF[200];
+^
+10 warnings generated.
+compiling WIFI.c...
+linking...
+Program Size: Code=3716 RO-data=1808 RW-data=4 ZI-data=1236  
+".\Objects\Project.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil_v5\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
