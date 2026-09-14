@@ -1,0 +1,15 @@
+# Keil MDK 编译产物
+Objects/
+Listings/
+DebugConfig/
+*.o
+*.hex
+*.axf
+*.lst
+*.map
+*.htm
+*.build_log.htm
+
+# 其他
+*.uvguix.*
+*.scvd
